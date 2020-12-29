@@ -1,0 +1,7 @@
+.my-class {
+  border: 1px solid red;
+
+  &.is-active {
+    padding: 2rem;
+  }
+}
