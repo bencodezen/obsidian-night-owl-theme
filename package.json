@@ -1,0 +1,29 @@
+{
+  "name": "obsidian-md-night-owl-theme",
+  "version": "0.1.0-alpha",
+  "description": "Night Owl Theme for Obsidian.md",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node-sass -w scss -o .",
+    "build": "node-sass scss -o .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bencodezen/obsidian-md-night-owl-theme.git"
+  },
+  "keywords": [
+    "css",
+    "obsidian",
+    "themes"
+  ],
+  "author": "Ben Hong <ben@bencodezen.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bencodezen/obsidian-md-night-owl-theme/issues"
+  },
+  "homepage": "https://github.com/bencodezen/obsidian-md-night-owl-theme#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
