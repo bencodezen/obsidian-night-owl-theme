@@ -14,12 +14,12 @@
   --font-size-h4: 20px;
   --font-size-h5: 19px;
   --font-size-h6: 18px;
-  --font-family-editor: Avenir, Avenir Next, sans-serif;
+  --font-family-editor: FiraCode Nerd Font Mono, cursive;
   --font-family-preview: Avenir, Avenir Next, sans-serif; }
 
 .theme-light,
 .theme-dark {
-  --background-primary: #011627;
+  --background-primary: #011628;
   --background-primary-alt: #44475a;
   --background-secondary: #44475a;
   --background-secondary-alt: #282a36;
