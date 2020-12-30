@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "node-sass -w scss -o .",
-    "build": "node-sass scss -o .",
+    "build": "node-sass scss/obsidian-night-owl-theme.scss -o .",
     "move": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
