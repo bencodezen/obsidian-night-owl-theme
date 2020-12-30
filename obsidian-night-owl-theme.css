@@ -681,9 +681,8 @@ ul .task-list-item ul::before {
     text-align: center;
     text-shadow: 0 0 0.1rem var(--text-accent); }
 
-.markdown-preview-view .task-list-item.is-checked {
-  text-decoration: none;
-  color: var(--text-accent); }
+.markdown-preview-view ul > li.task-list-item.is-checked {
+  text-decoration: none; }
 
 .checkbox-container {
   background-color: var(--background-primary); }

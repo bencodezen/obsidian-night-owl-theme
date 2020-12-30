@@ -34,9 +34,8 @@ ul .task-list-item ul::before {
   }
 }
 
-.markdown-preview-view .task-list-item.is-checked {
+.markdown-preview-view ul > li.task-list-item.is-checked {
   text-decoration: none;
-  color: var(--text-accent);
 }
 
 .checkbox-container {
