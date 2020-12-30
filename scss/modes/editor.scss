@@ -1,10 +1,10 @@
 $headingList: 1, 2, 3, 4, 5, 6;
 
 @each $heading in $headingList {
-  .cm-header-#{heading} {
+  .cm-header-#{$heading} {
     font-family: var(--font-family-editor);
     font-weight: 500;
-    font-size: var(--font-size-h#{heading});
-    color: var(--text-title-h#{heading});
+    font-size: var(--font-size-h#{$heading});
+    color: var(--text-title-h#{$heading});
   }
 }

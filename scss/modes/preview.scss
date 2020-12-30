@@ -1,10 +1,10 @@
 $headingList: h1, h2, h3, h4, h5, h6;
 
 @each $heading in $headingList {
-  .markdown-preview-view #{heading} {
+  .markdown-preview-view #{$heading} {
     font-family: var(--font-family-preview);
     font-weight: 500;
-    font-size: var(--font-size-#{heading});
-    color: var(--text-title-#{heading});
+    font-size: var(--font-size-#{$heading});
+    color: var(--text-title-#{$heading});
   }
 }
