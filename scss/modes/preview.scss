@@ -1,41 +1,10 @@
-.markdown-preview-view h1 {
-  font-family: var(--font-family-preview);
-  font-weight: 500;
-  font-size: var(--font-size-h1);
-  color: var(--text-title-h1);
-}
+$headingList: h1, h2, h3, h4, h5, h6;
 
-.markdown-preview-view h2 {
-  font-family: var(--font-family-preview);
-  font-weight: 500;
-  font-size: var(--font-size-h2);
-  color: var(--text-title-h2);
-}
-
-.markdown-preview-view h3 {
-  font-family: var(--font-family-preview);
-  font-weight: 500;
-  font-size: var(--font-size-h3);
-  color: var(--text-title-h3);
-}
-
-.markdown-preview-view h4 {
-  font-family: var(--font-family-preview);
-  font-weight: 500;
-  font-size: var(--font-size-h4);
-  color: var(--text-title-h4);
-}
-
-.markdown-preview-view h5 {
-  font-family: var(--font-family-preview);
-  font-weight: 500;
-  font-size: var(--font-size-h5);
-  color: var(--text-title-h5);
-}
-
-.markdown-preview-view h6 {
-  font-family: var(--font-family-preview);
-  font-weight: 500;
-  font-size: var(--font-size-h6);
-  color: var(--text-title-h6);
+@each $heading in $headingList {
+  .markdown-preview-view #{heading} {
+    font-family: var(--font-family-preview);
+    font-weight: 500;
+    font-size: var(--font-size-#{heading});
+    color: var(--text-title-#{heading});
+  }
 }
