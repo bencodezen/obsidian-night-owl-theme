@@ -206,15 +206,6 @@ a:not(.internal-link) {
   font-family: var(--font-family-editor);
   font-size: var(--font-size-normal); }
 
-/* normal text outside of headings and code of preview */
-.markdown-preview-view,
-.mod-single-child .markdown-preview-view {
-  font-family: var(--font-family-editor);
-  font-size: var(--font-size-normal);
-  padding-top: 0px;
-  padding-left: 2% !important;
-  padding-right: 1% !important; }
-
 /* bold in preview and editor */
 strong,
 .cm-strong {
@@ -253,52 +244,6 @@ img:hover {
 
 .community-theme img:hover {
   transform: none; }
-
-/*********************************/
-/* Headings - EDITOR and PREVIEW */
-/*********************************/
-/* headings for editor and preview */
-.cm-header-1,
-.markdown-preview-view h1 {
-  font-family: var(--font-family-editor);
-  font-weight: 500;
-  font-size: var(--font-size-h1);
-  color: var(--text-title-h1); }
-
-.cm-header-2,
-.markdown-preview-view h2 {
-  font-family: var(--font-family-editor);
-  font-weight: 500;
-  font-size: var(--font-size-h2);
-  color: var(--text-title-h2); }
-
-.cm-header-3,
-.markdown-preview-view h3 {
-  font-family: var(--font-family-editor);
-  font-weight: 500;
-  font-size: var(--font-size-h3);
-  color: var(--text-title-h3); }
-
-.cm-header-4,
-.markdown-preview-view h4 {
-  font-family: var(--font-family-editor);
-  font-weight: 500;
-  font-size: var(--font-size-h4);
-  color: var(--text-title-h4); }
-
-.cm-header-5,
-.markdown-preview-view h5 {
-  font-family: var(--font-family-editor);
-  font-weight: 500;
-  font-size: var(--font-size-h5);
-  color: var(--text-title-h5); }
-
-.cm-header-6,
-.markdown-preview-view h6 {
-  font-family: var(--font-family-editor);
-  font-weight: 500;
-  font-size: var(--font-size-h6);
-  color: var(--text-title-h6); }
 
 /***************************************/
 /*         Code block in  Preview      */
@@ -742,3 +687,75 @@ ul .task-list-item ul::before {
 
 .checkbox-container {
   background-color: var(--background-primary); }
+
+.cm-header-1 {
+  font-family: var(--font-family-editor);
+  font-weight: 500;
+  font-size: var(--font-size-h1);
+  color: var(--text-title-h1); }
+
+.cm-header-2 {
+  font-family: var(--font-family-editor);
+  font-weight: 500;
+  font-size: var(--font-size-h2);
+  color: var(--text-title-h2); }
+
+.cm-header-3 {
+  font-family: var(--font-family-editor);
+  font-weight: 500;
+  font-size: var(--font-size-h3);
+  color: var(--text-title-h3); }
+
+.cm-header-4 {
+  font-family: var(--font-family-editor);
+  font-weight: 500;
+  font-size: var(--font-size-h4);
+  color: var(--text-title-h4); }
+
+.cm-header-5 {
+  font-family: var(--font-family-editor);
+  font-weight: 500;
+  font-size: var(--font-size-h5);
+  color: var(--text-title-h5); }
+
+.cm-header-6 {
+  font-family: var(--font-family-editor);
+  font-weight: 500;
+  font-size: var(--font-size-h6);
+  color: var(--text-title-h6); }
+
+.markdown-preview-view h1 {
+  font-family: var(--font-family-preview);
+  font-weight: 500;
+  font-size: var(--font-size-h1);
+  color: var(--text-title-h1); }
+
+.markdown-preview-view h2 {
+  font-family: var(--font-family-preview);
+  font-weight: 500;
+  font-size: var(--font-size-h2);
+  color: var(--text-title-h2); }
+
+.markdown-preview-view h3 {
+  font-family: var(--font-family-preview);
+  font-weight: 500;
+  font-size: var(--font-size-h3);
+  color: var(--text-title-h3); }
+
+.markdown-preview-view h4 {
+  font-family: var(--font-family-preview);
+  font-weight: 500;
+  font-size: var(--font-size-h4);
+  color: var(--text-title-h4); }
+
+.markdown-preview-view h5 {
+  font-family: var(--font-family-preview);
+  font-weight: 500;
+  font-size: var(--font-size-h5);
+  color: var(--text-title-h5); }
+
+.markdown-preview-view h6 {
+  font-family: var(--font-family-preview);
+  font-weight: 500;
+  font-size: var(--font-size-h6);
+  color: var(--text-title-h6); }
