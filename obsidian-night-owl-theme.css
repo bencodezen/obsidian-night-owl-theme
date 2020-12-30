@@ -1,5 +1,74 @@
 @charset "UTF-8";
 /*-------------------------------------*/
+/*          CSS Variables              */
+/*-------------------------------------*/
+:root {
+  --font-size-normal: 18px;
+  --font-size-code: 15px;
+  --font-size-side-dock: 15px;
+  --font-size-side-dock-title: 18px;
+  --font-size-status-bar: 15px;
+  --font-size-h1: 26px;
+  --font-size-h2: 25px;
+  --font-size-h3: 21px;
+  --font-size-h4: 20px;
+  --font-size-h5: 19px;
+  --font-size-h6: 18px;
+  --font-family-editor: Avenir, Avenir Next, sans-serif;
+  --font-family-preview: Avenir, Avenir Next, sans-serif; }
+
+.theme-light,
+.theme-dark {
+  --background-primary: #011627;
+  --background-primary-alt: #44475a;
+  --background-secondary: #44475a;
+  --background-secondary-alt: #282a36;
+  --background-accent: #f8f8f2;
+  --background-modifier-border: #f8f8f2;
+  --background-modifier-form-field: rgba(0, 0, 0, 0.2);
+  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.5);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-success: #50fa7b;
+  /*no sure*/
+  --background-modifier-error: #3d0000;
+  /*no sure*/
+  --background-modifier-error-rgb: 61, 0, 0;
+  --background-modifier-error-hover: #470000;
+  --background-modifier-cover: rgba(0, 0, 0, 0.6);
+  --text-accent: #ffb86c;
+  --text-accent-hover: #8be9fd;
+  --text-normal: #f8f8f2;
+  --text-muted: #f8f8f2;
+  --text-faint: #bd93f9;
+  --text-highlight-bg: #ff5555;
+  --text-error: #ff79c6;
+  --text-error-hover: #ff79c6;
+  --text-selection: #6272a4;
+  /* Chromium precess this color with alpha channel */
+  --text-on-accent: #bd93f9;
+  --interactive-normal: #ffb86c;
+  --interactive-hover: #ff5555;
+  --interactive-accent: #ffb86c;
+  --interactive-accent-rgb: 123, 108, 217;
+  --interactive-accent-hover: #ff5555;
+  --scrollbar-active-thumb-bg: #282a36;
+  --scrollbar-bg: #282a36;
+  --scrollbar-thumb-bg: #282a36;
+  --text-title-h1: #ff79c6;
+  --text-title-h2: #bd93f9;
+  --text-title-h3: #ff5555;
+  --text-title-h4: #ffb86c;
+  --text-title-h5: #50fa7b;
+  --text-title-h6: #8be9fd;
+  --inline-code: #bd93f9;
+  --code-block: #8be9fd;
+  --pre-code: #44475a;
+  --blockquote-border: #ffb86c;
+  --vim-cursor: #ff5555;
+  --border-color: #2b2727;
+  /*also like transparent*/ }
+
+/*-------------------------------------*/
 /*      Search the following lines     */
 /*     to jump to specific section     */
 /*-------------------------------------*/
@@ -308,34 +377,6 @@ thead {
   border-bottom-left-radius: 4px; }
 
 /***************************************/
-/*               Checkbox              */
-/***************************************/
-.markdown-preview-view .task-list-item-checkbox:checked::before {
-  content: '✓';
-  position: absolute;
-  color: var(--text-accent);
-  font-size: 1em;
-  line-height: 1.25em;
-  width: 1.2em;
-  text-align: center;
-  text-shadow: 0 0 0.1em var(--text-accent); }
-
-.markdown-preview-view .task-list-item-checkbox {
-  -webkit-appearance: none;
-  top: 0.2em !important;
-  right: 4px;
-  box-sizing: border-box;
-  border: 1px solid var(--text-muted);
-  position: relative;
-  width: 1.25em;
-  height: 1.25em;
-  margin: 0;
-  box-shadow: 0 0 0.1em var(--text-muted); }
-
-.checkbox-container {
-  background-color: var(--background-primary); }
-
-/***************************************/
 /*              popover                */
 /***************************************/
 .popover {
@@ -610,10 +651,6 @@ ul ul::before {
   top: 0;
   bottom: 0; }
 
-/* rule line when there are checkboxes*/
-ul .task-list-item ul::before {
-  left: 0.15em !important; }
-
 /***************************************/
 /*       Code block in Editor          */
 /***************************************/
@@ -669,3 +706,39 @@ code {
   color: var(--text-faint);
   transition: transform 100ms ease-in-out;
   padding: 0px !important; }
+
+/* rule line when there are checkboxes*/
+ul .task-list-item ul::before {
+  left: 0.15em !important; }
+
+/***************************************/
+/*               Checkbox              */
+/***************************************/
+.markdown-preview-view .task-list-item-checkbox {
+  -webkit-appearance: none;
+  top: 0.2em !important;
+  right: 4px;
+  box-sizing: border-box;
+  position: relative;
+  width: 1rem;
+  height: 1rem;
+  margin: 0;
+  box-shadow: 0 0 0.1em var(--text-muted); }
+  .markdown-preview-view .task-list-item-checkbox:checked::before {
+    content: '✓';
+    position: absolute;
+    left: 6px;
+    top: -3px;
+    color: var(--text-accent);
+    font-size: 1rem;
+    line-height: 1.25rem;
+    width: 1.2rem;
+    text-align: center;
+    text-shadow: 0 0 0.1rem var(--text-accent); }
+
+.markdown-preview-view .task-list-item.is-checked {
+  text-decoration: none;
+  color: var(--text-accent); }
+
+.checkbox-container {
+  background-color: var(--background-primary); }
