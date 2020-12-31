@@ -1,4 +1,10 @@
+$primaryLightBlue: #82aaff;
 $primaryDarkBlue: hsl(207, 95%, 8%); // #011627
+$primaryLightGray: #d6deeb;
+$primaryLimeGreen: #c5e478;
+$primaryYellow: #ffeb95;
+$primaryTeal: #7fdbca;
+
 $editorFont: 'FiraCode Nerd Font Mono', cursive;
 
 /*-------------------------------------*/
@@ -41,7 +47,7 @@ $editorFont: 'FiraCode Nerd Font Mono', cursive;
   --text-accent-hover: #8be9fd;
   --text-normal: #f8f8f2;
   --text-muted: #f8f8f2;
-  --text-faint: #bd93f9;
+  --text-faint: #{$primaryTeal};
   --text-highlight-bg: #ff5555;
   --text-error: #ff79c6;
   --text-error-hover: #ff79c6;
@@ -56,8 +62,8 @@ $editorFont: 'FiraCode Nerd Font Mono', cursive;
   --scrollbar-bg: #282a36;
   --scrollbar-thumb-bg: #282a36;
   --text-title-h1: #ff79c6;
-  --text-title-h2: #bd93f9;
-  --text-title-h3: #ff5555;
+  --text-title-h2: #{$primaryLightBlue};
+  --text-title-h3: #{$primaryLimeGreen};
   --text-title-h4: #ffb86c;
   --text-title-h5: #50fa7b;
   --text-title-h6: #8be9fd;
