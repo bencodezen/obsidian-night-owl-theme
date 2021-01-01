@@ -629,6 +629,9 @@ code {
   transition: transform 100ms ease-in-out;
   padding: 0px !important; }
 
+body {
+  font-size: var(--font-size-normal); }
+
 .nav-file-title,
 .nav-folder-title {
   border: 1px solid transparent;
@@ -642,6 +645,10 @@ code {
   white-space: nowrap;
   width: max-content;
   min-width: 100%; }
+
+.markdown-preview-view .list-collapse-indicator {
+  margin-left: -60px;
+  padding-left: 8px; }
 
 /* rule line when there are checkboxes*/
 ul .task-list-item ul::before {
