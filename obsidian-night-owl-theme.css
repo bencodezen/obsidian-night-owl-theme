@@ -1,4 +1,10 @@
 @charset "UTF-8";
+/*------------- --------------------*/
+/*          Typography              */
+/*------------- --------------------*/
+/*-----------------------------*/
+/*          Colors             */
+/*-----------------------------*/
 /*-------------------------------------*/
 /*          CSS Variables              */
 /*-------------------------------------*/
@@ -15,7 +21,8 @@
   --font-size-h5: 19px;
   --font-size-h6: 18px;
   --font-family-editor: FiraCode Nerd Font Mono, cursive;
-  --font-family-preview: Avenir, Avenir Next, sans-serif; }
+  --font-family-preview: Ideal Sans, cursive;
+  --font-family-preview-heading: Sentinel, cursive; }
 
 .theme-light,
 .theme-dark {
@@ -738,37 +745,37 @@ ul .task-list-item ul::before {
   color: var(--text-title-h6); }
 
 .markdown-preview-view h1 {
-  font-family: var(--font-family-preview);
+  font-family: var(--font-family-preview-heading);
   font-weight: 500;
   font-size: var(--font-size-h1);
   color: var(--text-title-h1); }
 
 .markdown-preview-view h2 {
-  font-family: var(--font-family-preview);
+  font-family: var(--font-family-preview-heading);
   font-weight: 500;
   font-size: var(--font-size-h2);
   color: var(--text-title-h2); }
 
 .markdown-preview-view h3 {
-  font-family: var(--font-family-preview);
+  font-family: var(--font-family-preview-heading);
   font-weight: 500;
   font-size: var(--font-size-h3);
   color: var(--text-title-h3); }
 
 .markdown-preview-view h4 {
-  font-family: var(--font-family-preview);
+  font-family: var(--font-family-preview-heading);
   font-weight: 500;
   font-size: var(--font-size-h4);
   color: var(--text-title-h4); }
 
 .markdown-preview-view h5 {
-  font-family: var(--font-family-preview);
+  font-family: var(--font-family-preview-heading);
   font-weight: 500;
   font-size: var(--font-size-h5);
   color: var(--text-title-h5); }
 
 .markdown-preview-view h6 {
-  font-family: var(--font-family-preview);
+  font-family: var(--font-family-preview-heading);
   font-weight: 500;
   font-size: var(--font-size-h6);
   color: var(--text-title-h6); }

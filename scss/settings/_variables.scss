@@ -1,11 +1,21 @@
+/*------------- --------------------*/
+/*          Typography              */
+/*------------- --------------------*/
+
+$previewFontHeading: 'Sentinel', cursive;
+$previewFontBody: 'Ideal Sans', cursive;
+$editorFont: 'FiraCode Nerd Font Mono', cursive;
+
+/*-----------------------------*/
+/*          Colors             */
+/*-----------------------------*/
+
 $primaryLightBlue: #82aaff;
 $primaryDarkBlue: hsl(207, 95%, 8%); // #011627
 $primaryLightGray: #d6deeb;
 $primaryLimeGreen: #c5e478;
 $primaryYellow: #ffeb95;
 $primaryTeal: #7fdbca;
-
-$editorFont: 'FiraCode Nerd Font Mono', cursive;
 
 /*-------------------------------------*/
 /*          CSS Variables              */
@@ -24,7 +34,8 @@ $editorFont: 'FiraCode Nerd Font Mono', cursive;
   --font-size-h5: 19px;
   --font-size-h6: 18px;
   --font-family-editor: #{$editorFont};
-  --font-family-preview: Avenir, Avenir Next, sans-serif;
+  --font-family-preview: #{$previewFontBody};
+  --font-family-preview-heading: #{$previewFontHeading};
 }
 
 .theme-light,
