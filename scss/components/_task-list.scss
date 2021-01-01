@@ -23,7 +23,7 @@ ul .task-list-item ul::before {
   &:checked::before {
     content: '✓';
     position: absolute;
-    left: 6px;
+    left: -1px;
     top: -3px;
     color: var(--text-accent);
     font-size: 1rem;
