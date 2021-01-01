@@ -1,12 +1,7 @@
 // Original NightOwl Theme
 // https://github.com/sdras/night-owl-vscode-theme/blob/master/themes/Night%20Owl-color-theme.json
 
-@import 'settings/variables.scss';
-
-@import 'base/dracula.scss';
-@import 'base/editor.scss';
-
-@import './components/index';
-
-@import 'modes/editor.scss';
-@import 'modes/preview.scss';
+@import 'settings/index';
+@import 'base/index';
+@import 'components/index';
+@import 'modes/index';
