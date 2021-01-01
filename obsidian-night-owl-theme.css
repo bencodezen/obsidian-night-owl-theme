@@ -646,7 +646,7 @@ ul .task-list-item ul::before {
 .markdown-preview-view .task-list-item-checkbox {
   -webkit-appearance: none;
   top: 0.2em !important;
-  right: 4px;
+  right: 8px;
   box-sizing: border-box;
   position: relative;
   width: 1rem;
