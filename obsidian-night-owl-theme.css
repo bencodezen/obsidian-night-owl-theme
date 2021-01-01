@@ -20,9 +20,9 @@
 .theme-light,
 .theme-dark {
   --background-primary: #011628;
-  --background-primary-alt: #44475a;
-  --background-secondary: #44475a;
-  --background-secondary-alt: #282a36;
+  --background-primary-alt: #011c32;
+  --background-secondary: #011c32;
+  --background-secondary-alt: #02223c;
   --background-accent: #f8f8f2;
   --background-modifier-border: #f8f8f2;
   --background-modifier-form-field: rgba(0, 0, 0, 0.2);
@@ -48,7 +48,7 @@
   --text-on-accent: #bd93f9;
   --interactive-normal: #ffb86c;
   --interactive-hover: #ff5555;
-  --interactive-accent: #ffb86c;
+  --interactive-accent: #ffeb95;
   --interactive-accent-rgb: 123, 108, 217;
   --interactive-accent-hover: #ff5555;
   --scrollbar-active-thumb-bg: #282a36;
@@ -450,36 +450,6 @@ thead {
   margin-left: auto;
   margin-right: auto; }
 
-/**************************************/
-/*  note header bar for non-andy mode */
-/*        activated in dark mode      */
-/**************************************/
-/* header */
-.theme-dark .view-header {
-  background-color: var(--background-primary) !important;
-  border-top: 1px solid var(--border-color) !important;
-  border-bottom: 1px solid var(--border-color) !important; }
-
-.theme-dark .view-header-title-container:after {
-  background: linear-gradient(to bottom, transparent, var(--background-primary)) !important; }
-
-.theme-dark .workspace-leaf.mod-active .view-header {
-  background-color: var(--background-secondary-alt) !important;
-  border-top: 0px !important;
-  border-bottom: 3px solid var(--interactive-accent) !important; }
-
-.workspace-leaf.mod-active .view-header-title-container:after {
-  background: linear-gradient(to bottom, transparent, var(--background-secondary-alt)) !important; }
-
-.workspace-leaf.mod-active .view-header-title,
-.workspace-leaf.mod-active .view-header-icon {
-  color: var(--background-modifier-border); }
-
-.view-header-title,
-.view-header-icon,
-.view-action {
-  color: var(--text-faint); }
-
 /* shift sticky position, so titles will stack up to the left */
 /* This will currently stack to a maximum of 10 before resetting */
 .theme-light .mod-root.workspace-split.mod-vertical > div:nth-child(10n-8) {
@@ -686,6 +656,36 @@ ul .task-list-item ul::before {
 
 .checkbox-container {
   background-color: var(--background-primary); }
+
+/**************************************/
+/*  note header bar for non-andy mode */
+/*        activated in dark mode      */
+/**************************************/
+/* header */
+.theme-dark .view-header {
+  background-color: var(--background-primary) !important;
+  border-top: 1px solid var(--border-color) !important;
+  border-bottom: 1px solid var(--border-color) !important; }
+
+.theme-dark .view-header-title-container:after {
+  background: linear-gradient(to bottom, transparent, var(--background-primary)) !important; }
+
+.theme-dark .workspace-leaf.mod-active .view-header {
+  background-color: var(--background-primary-alt) !important;
+  border-top: 0px !important;
+  border-bottom: 3px solid var(--interactive-accent) !important; }
+
+.workspace-leaf.mod-active .view-header-title-container:after {
+  background: linear-gradient(to bottom, transparent, var(--background-secondary-alt)) !important; }
+
+.workspace-leaf.mod-active .view-header-title,
+.workspace-leaf.mod-active .view-header-icon {
+  color: var(--background-modifier-border); }
+
+.view-header-title,
+.view-header-icon,
+.view-action {
+  color: var(--text-faint); }
 
 .cm-header-1 {
   font-family: var(--font-family-editor);

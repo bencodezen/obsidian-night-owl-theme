@@ -1,0 +1,45 @@
+/**************************************/
+/*  note header bar for non-andy mode */
+/*        activated in dark mode      */
+/**************************************/
+
+/* header */
+
+.theme-dark .view-header {
+  background-color: var(--background-primary) !important;
+  border-top: 1px solid var(--border-color) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
+.theme-dark .view-header-title-container:after {
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--background-primary)
+  ) !important;
+}
+
+.theme-dark .workspace-leaf.mod-active .view-header {
+  background-color: var(--background-primary-alt) !important;
+  border-top: 0px !important;
+  border-bottom: 3px solid var(--interactive-accent) !important;
+}
+
+.workspace-leaf.mod-active .view-header-title-container:after {
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--background-secondary-alt)
+  ) !important;
+}
+
+.workspace-leaf.mod-active .view-header-title,
+.workspace-leaf.mod-active .view-header-icon {
+  color: var(--background-modifier-border);
+}
+
+.view-header-title,
+.view-header-icon,
+.view-action {
+  color: var(--text-faint);
+}

@@ -30,9 +30,9 @@ $editorFont: 'FiraCode Nerd Font Mono', cursive;
 .theme-light,
 .theme-dark {
   --background-primary: #{$primaryDarkBlue};
-  --background-primary-alt: #44475a;
-  --background-secondary: #44475a;
-  --background-secondary-alt: #282a36;
+  --background-primary-alt: #{lighten($primaryDarkBlue, 2%)};
+  --background-secondary: #{lighten($primaryDarkBlue, 2%)};
+  --background-secondary-alt: #{lighten($primaryDarkBlue, 4%)};
   --background-accent: #f8f8f2;
   --background-modifier-border: #f8f8f2;
   --background-modifier-form-field: rgba(0, 0, 0, 0.2);
@@ -55,7 +55,7 @@ $editorFont: 'FiraCode Nerd Font Mono', cursive;
   --text-on-accent: #bd93f9;
   --interactive-normal: #ffb86c;
   --interactive-hover: #ff5555;
-  --interactive-accent: #ffb86c;
+  --interactive-accent: #{$primaryYellow};
   --interactive-accent-rgb: 123, 108, 217;
   --interactive-accent-hover: #ff5555;
   --scrollbar-active-thumb-bg: #282a36;
