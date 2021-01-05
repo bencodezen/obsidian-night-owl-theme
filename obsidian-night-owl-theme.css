@@ -20,9 +20,9 @@
   --font-size-h4: 20px;
   --font-size-h5: 19px;
   --font-size-h6: 18px;
-  --font-family-editor: FiraCode Nerd Font Mono, cursive;
-  --font-family-preview: Ideal Sans, cursive;
-  --font-family-preview-heading: Sentinel, cursive; }
+  --font-family-editor: FiraCode Nerd Font Mono, Menlo, Monaco, Courier New, monospace;
+  --font-family-preview: Ideal Sans, Avenir Next, Helvetica, Arial, sans-serif;
+  --font-family-preview-heading: Sentinel, aramond, Georgia, serif; }
 
 .theme-light,
 .theme-dark {
