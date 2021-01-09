@@ -22,7 +22,7 @@
   --font-size-h6: 18px;
   --font-family-editor: FiraCode Nerd Font Mono, Menlo, Monaco, Courier New, monospace;
   --font-family-preview: Ideal Sans, Avenir Next, Helvetica, Arial, sans-serif;
-  --font-family-preview-heading: Sentinel, aramond, Georgia, serif; }
+  --font-family-preview-heading: Sentinel, Garamond, Georgia, serif; }
 
 .theme-light,
 .theme-dark {
@@ -645,6 +645,9 @@ body {
   white-space: nowrap;
   width: max-content;
   min-width: 100%; }
+
+a:not(.internal-link) {
+  font-style: normal; }
 
 .markdown-preview-view .list-collapse-indicator {
   margin-left: -60px;

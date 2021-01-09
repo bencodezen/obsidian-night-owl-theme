@@ -1,3 +1,7 @@
 @import 'dracula';
 @import 'editor';
 @import 'typography';
+
+a:not(.internal-link) {
+  font-style: normal;
+}
