@@ -1,6 +1,6 @@
 {
   "name": "obsidian-md-night-owl-theme",
-  "version": "0.1.0-alpha",
+  "version": "1.0.0",
   "description": "Night Owl Theme for Obsidian.md",
   "main": "index.js",
   "scripts": {
