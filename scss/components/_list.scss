@@ -2,3 +2,7 @@
   margin-left: -60px;
   padding-left: 8px;
 }
+
+li:not(.is-checked) {
+  color: white;
+}

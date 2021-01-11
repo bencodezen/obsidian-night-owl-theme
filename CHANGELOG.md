@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Normal list items under a checked task item should not change their styles and be distinguishable for checked items
+
 ### Changed
 
 - Removed italic styling from external links since icon provided enough indication
