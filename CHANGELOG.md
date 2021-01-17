@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Removed italic styling from external links since icon provided enough indication
+- Increased font-weight on editor headings to be more prominent
 
 ## [1.0.0] - 2021-01-05
 
