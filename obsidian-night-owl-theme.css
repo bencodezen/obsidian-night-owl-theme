@@ -207,12 +207,6 @@ a:not(.internal-link) {
 ::selection {
   background-color: var(--text-selection); }
 
-/* normal text outside of headings and code of editor */
-.cm-s-obsidian,
-.mod-single-child .cm-s-obsidian {
-  font-family: var(--font-family-editor);
-  font-size: var(--font-size-normal); }
-
 /* bold in preview and editor */
 strong,
 .cm-strong {
@@ -551,7 +545,7 @@ thead {
 /*preview padding too small*/
 .theme-light .markdown-preview-view,
 .theme-light .mod-single-child .markdown-preview-view {
-  font-family: var(--font-family-editor);
+  font-family: var(--font-family-preview);
   font-size: var(--font-size-normal);
   padding-top: 5px;
   padding-left: 4% !important;
@@ -653,6 +647,9 @@ a:not(.internal-link) {
   margin-left: -60px;
   padding-left: 8px; }
 
+li:not(.is-checked) {
+  color: white; }
+
 /* rule line when there are checkboxes*/
 ul .task-list-item ul::before {
   left: 0.15em !important; }
@@ -718,84 +715,81 @@ ul .task-list-item ul::before {
 .view-action {
   color: var(--text-faint); }
 
-.cm-header-1 {
+/** Font weights appear lighter than Preview mode. **/
+.cm-header.cm-header-1 {
   font-family: var(--font-family-editor);
-  font-weight: 500;
+  font-weight: 900;
   font-size: var(--font-size-h1);
   color: var(--text-title-h1); }
 
-.cm-header-2 {
+.cm-header.cm-header-2 {
   font-family: var(--font-family-editor);
-  font-weight: 500;
+  font-weight: 900;
   font-size: var(--font-size-h2);
   color: var(--text-title-h2); }
 
-.cm-header-3 {
+.cm-header.cm-header-3 {
   font-family: var(--font-family-editor);
-  font-weight: 500;
+  font-weight: 800;
   font-size: var(--font-size-h3);
   color: var(--text-title-h3); }
 
-.cm-header-4 {
+.cm-header.cm-header-4 {
   font-family: var(--font-family-editor);
-  font-weight: 500;
+  font-weight: 700;
   font-size: var(--font-size-h4);
   color: var(--text-title-h4); }
 
-.cm-header-5 {
+.cm-header.cm-header-5 {
   font-family: var(--font-family-editor);
-  font-weight: 500;
+  font-weight: 600;
   font-size: var(--font-size-h5);
   color: var(--text-title-h5); }
 
-.cm-header-6 {
+.cm-header.cm-header-6 {
   font-family: var(--font-family-editor);
-  font-weight: 500;
+  font-weight: 600;
   font-size: var(--font-size-h6);
   color: var(--text-title-h6); }
+
+/* normal text for non-headings and code of editor */
+.cm-s-obsidian,
+.mod-single-child .cm-s-obsidian {
+  font-family: var(--font-family-editor);
+  font-size: var(--font-size-normal); }
 
 .markdown-preview-view h1 {
   font-family: var(--font-family-preview-heading);
   font-size: var(--font-size-h1);
+  font-weight: 900;
   color: var(--text-title-h1); }
 
 .markdown-preview-view h2 {
   font-family: var(--font-family-preview-heading);
   font-size: var(--font-size-h2);
+  font-weight: 800;
   color: var(--text-title-h2); }
 
 .markdown-preview-view h3 {
   font-family: var(--font-family-preview-heading);
   font-size: var(--font-size-h3);
+  font-weight: 700;
   color: var(--text-title-h3); }
 
 .markdown-preview-view h4 {
   font-family: var(--font-family-preview-heading);
   font-size: var(--font-size-h4);
+  font-weight: 600;
   color: var(--text-title-h4); }
 
 .markdown-preview-view h5 {
   font-family: var(--font-family-preview-heading);
   font-size: var(--font-size-h5);
+  font-weight: 500;
   color: var(--text-title-h5); }
 
 .markdown-preview-view h6 {
   font-family: var(--font-family-preview-heading);
   font-size: var(--font-size-h6);
+  font-weight: 500;
   color: var(--text-title-h6); }
-
-.markdown-preview-view h1 {
-  font-weight: 900; }
-
-.markdown-preview-view h2 {
-  font-weight: 800; }
-
-.markdown-preview-view h3 {
-  font-weight: 700; }
-
-.markdown-preview-view h4 {
-  font-weight: 600; }
-
-.markdown-preview-view h5,
-.markdown-preview-view h6 {
-  font-weight: 500; }

@@ -1,32 +1,17 @@
-$headingList: h1, h2, h3, h4, h5, h6;
+$headingList: (
+  'h1': 900,
+  'h2': 800,
+  'h3': 700,
+  'h4': 600,
+  'h5': 500,
+  'h6': 500
+);
 
-@each $heading in $headingList {
+@each $heading, $headingWeight in $headingList {
   .markdown-preview-view #{$heading} {
     font-family: var(--font-family-preview-heading);
     font-size: var(--font-size-#{$heading});
+    font-weight: $headingWeight;
     color: var(--text-title-#{$heading});
-  }
-}
-
-.markdown-preview-view {
-  h1 {
-    font-weight: 900;
-  }
-
-  h2 {
-    font-weight: 800;
-  }
-
-  h3 {
-    font-weight: 700;
-  }
-
-  h4 {
-    font-weight: 600;
-  }
-
-  h5,
-  h6 {
-    font-weight: 500;
   }
 }

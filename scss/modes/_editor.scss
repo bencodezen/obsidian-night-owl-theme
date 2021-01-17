@@ -1,10 +1,25 @@
-$headingList: 1, 2, 3, 4, 5, 6;
+/** Font weights appear lighter than Preview mode. **/
+$editorHeadingList: (
+  '1': 900,
+  '2': 900,
+  '3': 800,
+  '4': 700,
+  '5': 600,
+  '6': 600
+);
 
-@each $heading in $headingList {
-  .cm-header-#{$heading} {
+@each $heading, $headingWeight in $editorHeadingList {
+  .cm-header.cm-header-#{$heading} {
     font-family: var(--font-family-editor);
-    font-weight: 500;
+    font-weight: $headingWeight;
     font-size: var(--font-size-h#{$heading});
     color: var(--text-title-h#{$heading});
   }
+}
+
+/* normal text for non-headings and code of editor */
+.cm-s-obsidian,
+.mod-single-child .cm-s-obsidian {
+  font-family: var(--font-family-editor);
+  font-size: var(--font-size-normal);
 }

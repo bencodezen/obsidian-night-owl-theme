@@ -157,13 +157,6 @@ a:not(.internal-link) {
   background-color: var(--text-selection);
 }
 
-/* normal text outside of headings and code of editor */
-.cm-s-obsidian,
-.mod-single-child .cm-s-obsidian {
-  font-family: var(--font-family-editor);
-  font-size: var(--font-size-normal);
-}
-
 /* bold in preview and editor */
 strong,
 .cm-strong {
@@ -564,7 +557,7 @@ thead {
 /*preview padding too small*/
 .theme-light .markdown-preview-view,
 .theme-light .mod-single-child .markdown-preview-view {
-  font-family: var(--font-family-editor);
+  font-family: var(--font-family-preview);
   font-size: var(--font-size-normal);
   padding-top: 5px;
   padding-left: 4% !important;
