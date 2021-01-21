@@ -657,6 +657,10 @@ ul .task-list-item ul::before {
 /***************************************/
 /*               Checkbox              */
 /***************************************/
+.markdown-preview-view ul > li.task-list-item {
+  list-style: none;
+  text-indent: -16px; }
+
 .markdown-preview-view .task-list-item-checkbox {
   -webkit-appearance: none;
   top: 0.2em !important;
