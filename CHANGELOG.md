@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - Normal list items under a checked task item should not change their styles and be distinguishable for checked items
+- Checklist items should align with the norma list item
 
 ### Changed
 
