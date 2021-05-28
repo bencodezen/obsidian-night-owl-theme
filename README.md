@@ -34,4 +34,4 @@ When in edit mode, the typography is inspired from a developer like environment 
 
 ## Credit
 
-🎩 Hat tip to the [Dracula Obsidian Theme](https://github.com/jarodise/Dracula-for-Obsidian.md) for serving as the base theme I'm using to create this theme.
+🎩 Hat tip to the [Dracula Obsidian Theme](https://github.com/jarodise/Dracula-for-Obsidian.md) for serving as the base theme I used to create this theme.
