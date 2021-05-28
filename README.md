@@ -1,10 +1,10 @@
 # Obsidian.md - Night Owl Theme
 
-![Obsidian Night Owl Theme Preview](/assets/obsidian-night-owl-theme-preview.png)
-
 ![Release Badge](https://img.shields.io/github/v/release/bencodezen/obsidian-md-night-owl-theme)
 
 ⚡ Inspired by the original [Night Owl theme](https://github.com/sdras/night-owl-vscode-theme) by [Sarah Drasner](https://twitter.com/sarah_edo).
+
+![Obsidian Night Owl Theme Preview](/assets/obsidian-night-owl-theme-preview.png)
 
 ## FAQs
 
