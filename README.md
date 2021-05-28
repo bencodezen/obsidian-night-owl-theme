@@ -26,11 +26,14 @@ The Sass partials are will a work in progress though, so the way things are orga
 
 When in preview mode, the typography is inspired by a dual font family system to easily distinguish between headings and regular text.
 
+- Headings: [Rubik](https://fonts.google.com/specimen/Rubik)
+- Body: [Karla](https://fonts.google.com/specimen/Karla)
+
 ### Editor Mode
 
 When in edit mode, the typography is inspired from a developer like environment where you're "coding" your second-brain.
 
-- [Fira Nerd Code Font Mono](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode)
+- [IBM Plex Mono](https://fonts.google.com/specimen/IBM+Plex+Mono)
 
 ## Credit
 
