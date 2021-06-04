@@ -1,10 +1,10 @@
-const fse = require('fs-extra')
-const dotenv = require('dotenv')
+const fse = require('fs-extra');
+const dotenv = require('dotenv');
 
 // Load your local .env file into process.env
-dotenv.config()
+dotenv.config();
 
 fse
-  .copy('./obsidian-night-owl-theme.css', process.env.DESTINATION)
+  .copy('./obsidian.css', process.env.DESTINATION)
   .then(() => console.log('Destination: CSS file copied successfully!'))
-  .catch(error => console.error(error))
+  .catch((error) => console.error(error));
