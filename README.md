@@ -30,13 +30,13 @@
 
 ### How do I customize this theme?
 
-#### Modify the `obsidian.css` file in your theme folder
+#### Add CSS snippets
 
-⚠️ This is the simplest route, but it has its drawbacks in terms of sustainable change and possibly being overridden if you fetch updates to the theme.
+Check out CSS snippets as a way to progressively enhance the theme.
 
-1. Open your vault in a text editor (e.g., [VS Code](https://code.visualstudio.com/))
-2. Open the theme's CSS file under `/.obsidian/themes/Night Owl.css`
-3. Make whatever changes you want in there and then save!
+Here's a [useful forum post](https://forum.obsidian.md/t/how-to-achieve-css-code-snippets/8474) to help get you started.
+
+> 🎩 Thanks to the suggestion by @DutchPete!
 
 #### Create a fork of this theme
 
