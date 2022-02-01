@@ -5,11 +5,17 @@ id: night-owl-theme
 settings:
     -
         id: night-owl-typography
-        title: Typography Colors
+        title: Colors
         type: heading
         level: 3
     -
-        id: font-italic-color
+        id: text-bold-color
+        title: Bold Color
+        type: variable-color
+        format: hex
+        default: '#{$primaryLightGreen}'
+    -
+        id: text-italic-color
         title: Italic Color
         type: variable-color
         format: hex

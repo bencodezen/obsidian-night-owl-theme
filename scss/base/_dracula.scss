@@ -168,13 +168,13 @@ a:not(.internal-link) {
 strong,
 .cm-strong {
   font-weight: 600;
-  color: var(--primary-light-green);
+  color: var(--text-bold-color);
 }
 
 /* emphasis in preview and editor */
 em,
 .cm-em {
-  color: var(--font-italic-color);
+  color: var(--text-italic-color);
   font-style: italic;
 }
 

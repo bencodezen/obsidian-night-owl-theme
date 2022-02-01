@@ -17,8 +17,6 @@
   --font-family-editor: #{$editorFont};
   --font-family-preview: #{$previewFontBody};
   --font-family-preview-heading: #{$previewFontHeading};
-  --primary-light-green: #{$primaryLightGreen};
-  --font-italic-color: #{$primaryYellow};
   --primary-lavender: #{$primaryLavender};
 }
 
@@ -33,13 +31,15 @@
   --background-modifier-form-field: rgba(0, 0, 0, 0.2);
   --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.5);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
-  --background-modifier-success: #50fa7b; /*no sure*/
+  --background-modifier-success: #{$primaryLightGreen}; /*no sure*/
   --background-modifier-error: #3d0000; /*no sure*/
   --background-modifier-error-rgb: 61, 0, 0;
   --background-modifier-error-hover: #470000;
   --background-modifier-cover: rgba(0, 0, 0, 0.6);
   --text-accent: #{$primaryYellow};
   --text-accent-hover: #8be9fd;
+  --text-bold-color: #{$primaryLightGreen};
+  --text-italic-color: #{$primaryYellow};
   --text-normal: #f8f8f2;
   --text-muted: #f8f8f2;
   --text-faint: #{$primaryTeal};
@@ -60,7 +60,7 @@
   --text-title-h2: #{$primaryLightBlue};
   --text-title-h3: #{$primaryLimeGreen};
   --text-title-h4: #ffb86c;
-  --text-title-h5: #50fa7b;
+  --text-title-h5: #{$primaryLightGreen};
   --text-title-h6: #8be9fd;
   --inline-code: #bd93f9;
   --code-block: #8be9fd;
