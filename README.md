@@ -30,7 +30,11 @@
 
 ### How do I customize this theme?
 
-#### Add CSS snippets
+#### Easiest: Use [Obsidian Style Settings Plugin](https://github.com/mgmeyers/obsidian-style-settings)
+
+This allows you to configure the theme directly in Obsidian without any CSS knowledge required!
+
+#### Intermediate: Add CSS snippets
 
 Check out CSS snippets as a way to progressively enhance the theme.
 
@@ -38,7 +42,7 @@ Here's a [useful forum post](https://forum.obsidian.md/t/how-to-achieve-css-code
 
 > 🎩 Thanks to the suggestion by @DutchPete!
 
-#### Create a fork of this theme
+#### Hard: Create a fork of this theme
 
 This is arguably the most reliable route, but will require some familiarity with coding.
 
