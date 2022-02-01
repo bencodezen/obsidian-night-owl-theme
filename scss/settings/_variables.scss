@@ -13,7 +13,10 @@ $editorFont: 'IBM Plex Mono', Menlo, Monaco, 'Courier New', monospace;
 $primaryLightBlue: #82aaff;
 $primaryDarkBlue: hsl(207, 95%, 8%); // #011627
 $primaryLightGray: #d6deeb;
+$primaryLightGreen: #50fa7b;
 $primaryLimeGreen: #c5e478;
+$primaryLavender: #b380fb;
+
 $primaryYellow: #ffeb95;
 $primaryTeal: #7fdbca;
 $primaryHighlight: hsla(61, 100%, 32%, 0.8); // #a0a300ba
@@ -37,6 +40,9 @@ $primaryHighlight: hsla(61, 100%, 32%, 0.8); // #a0a300ba
   --font-family-editor: #{$editorFont};
   --font-family-preview: #{$previewFontBody};
   --font-family-preview-heading: #{$previewFontHeading};
+  --primary-light-green: #{$primaryLightGreen};
+  --font-italic-color: #{$primaryYellow};
+  --primary-lavender: #{$primaryLavender};
 }
 
 .theme-light,
