@@ -1,9 +1,10 @@
 // Original Night Owl Theme
 // https://github.com/sdras/night-owl-vscode-theme/blob/master/themes/Night%20Owl-color-theme.json
 
+@import 'settings/index';
+
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400;1,500&family=Karla:ital,wght@0,400;0,600;1,400;1,600&family=Rubik:ital,wght@0,400;0,600;1,400;1,600&display=swap');
 
-@import 'settings/index';
 @import 'base/index';
 @import 'components/index';
 @import 'modes/index';
