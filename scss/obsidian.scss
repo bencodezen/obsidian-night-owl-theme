@@ -7,3 +7,8 @@
 @import 'base/index';
 @import 'components/index';
 @import 'modes/index';
+
+.markdown-source-view.mod-cm6
+  .HyperMD-task-line[data-task]:not([data-task=' ']) {
+  text-decoration: none;
+}

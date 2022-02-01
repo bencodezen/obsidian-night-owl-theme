@@ -793,3 +793,7 @@ ul .task-list-item ul::before {
 .markdown-preview-view h5,
 .markdown-preview-view h6 {
   font-weight: 500; }
+
+.markdown-source-view.mod-cm6
+.HyperMD-task-line[data-task]:not([data-task=' ']) {
+  text-decoration: none; }
