@@ -30,3 +30,9 @@
   font-size: 0.8rem;
   opacity: 0.5;
 }
+
+// Mermaid
+.statediagram-note rect {
+  fill: var(--background-secondary-alt) !important;
+  stroke: #fff !important;
+}

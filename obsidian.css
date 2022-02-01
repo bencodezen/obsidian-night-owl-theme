@@ -844,3 +844,7 @@ ul .task-list-item ul::before {
   margin-left: 3px;
   font-size: 0.8rem;
   opacity: 0.5; }
+
+.statediagram-note rect {
+  fill: var(--background-secondary-alt) !important;
+  stroke: #fff !important; }
