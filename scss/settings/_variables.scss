@@ -13,76 +13,9 @@ $editorFont: 'IBM Plex Mono', Menlo, Monaco, 'Courier New', monospace;
 $primaryLightBlue: #82aaff;
 $primaryDarkBlue: hsl(207, 95%, 8%); // #011627
 $primaryLightGray: #d6deeb;
+$primaryLightGreen: #50fa7b;
 $primaryLimeGreen: #c5e478;
+$primaryLavender: #b380fb;
 $primaryYellow: #ffeb95;
 $primaryTeal: #7fdbca;
 $primaryHighlight: hsla(61, 100%, 32%, 0.8); // #a0a300ba
-
-/*-------------------------------------*/
-/*          CSS Variables              */
-/*-------------------------------------*/
-
-:root {
-  --font-size-normal: 18px;
-  --font-size-code: 15px;
-  --font-size-side-dock: 15px;
-  --font-size-side-dock-title: 18px;
-  --font-size-status-bar: 15px;
-  --font-size-h1: 30px;
-  --font-size-h2: 25px;
-  --font-size-h3: 21px;
-  --font-size-h4: 20px;
-  --font-size-h5: 19px;
-  --font-size-h6: 18px;
-  --font-family-editor: #{$editorFont};
-  --font-family-preview: #{$previewFontBody};
-  --font-family-preview-heading: #{$previewFontHeading};
-}
-
-.theme-light,
-.theme-dark {
-  --background-primary: #{$primaryDarkBlue};
-  --background-primary-alt: #{lighten($primaryDarkBlue, 2%)};
-  --background-secondary: #{lighten($primaryDarkBlue, 2%)};
-  --background-secondary-alt: #{lighten($primaryDarkBlue, 4%)};
-  --background-accent: #f8f8f2;
-  --background-modifier-border: #f8f8f2;
-  --background-modifier-form-field: rgba(0, 0, 0, 0.2);
-  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.5);
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
-  --background-modifier-success: #50fa7b; /*no sure*/
-  --background-modifier-error: #3d0000; /*no sure*/
-  --background-modifier-error-rgb: 61, 0, 0;
-  --background-modifier-error-hover: #470000;
-  --background-modifier-cover: rgba(0, 0, 0, 0.6);
-  --text-accent: #{$primaryYellow};
-  --text-accent-hover: #8be9fd;
-  --text-normal: #f8f8f2;
-  --text-muted: #f8f8f2;
-  --text-faint: #{$primaryTeal};
-  --text-highlight-bg: #{$primaryHighlight};
-  --text-error: #ff79c6;
-  --text-error-hover: #ff79c6;
-  --text-selection: #6272a4; /* Chromium precess this color with alpha channel */
-  --text-on-accent: #bd93f9;
-  --interactive-normal: #ffb86c;
-  --interactive-hover: #ff5555;
-  --interactive-accent: #{$primaryYellow};
-  --interactive-accent-rgb: 123, 108, 217;
-  --interactive-accent-hover: #ff5555;
-  --scrollbar-active-thumb-bg: #282a36;
-  --scrollbar-bg: #282a36;
-  --scrollbar-thumb-bg: #282a36;
-  --text-title-h1: #ff79c6;
-  --text-title-h2: #{$primaryLightBlue};
-  --text-title-h3: #{$primaryLimeGreen};
-  --text-title-h4: #ffb86c;
-  --text-title-h5: #50fa7b;
-  --text-title-h6: #8be9fd;
-  --inline-code: #bd93f9;
-  --code-block: #8be9fd;
-  --pre-code: #44475a;
-  --blockquote-border: #ffb86c;
-  --vim-cursor: #ff5555;
-  --border-color: #2b2727; /*also like transparent*/
-}

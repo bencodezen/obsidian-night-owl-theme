@@ -1,6 +1,6 @@
 {
   "name": "obsidian-md-night-owl-theme",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Night Owl Theme for Obsidian.md",
   "main": "index.js",
   "scripts": {
@@ -27,6 +27,6 @@
   "dependencies": {
     "dotenv": "^8.2.0",
     "fs-extra": "^9.0.1",
-    "node-sass": "^5.0.0"
+    "node-sass": "^7.0.1"
   }
 }

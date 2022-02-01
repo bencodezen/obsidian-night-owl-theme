@@ -1,9 +1,32 @@
 // Original Night Owl Theme
 // https://github.com/sdras/night-owl-vscode-theme/blob/master/themes/Night%20Owl-color-theme.json
 
+@import 'settings/index';
+
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400;1,500&family=Karla:ital,wght@0,400;0,600;1,400;1,600&family=Rubik:ital,wght@0,400;0,600;1,400;1,600&display=swap');
 
-@import 'settings/index';
 @import 'base/index';
 @import 'components/index';
 @import 'modes/index';
+
+.markdown-source-view.mod-cm6
+  .HyperMD-task-line[data-task]:not([data-task=' ']) {
+  text-decoration: none;
+}
+
+.markdown-source-view.mod-cm6 .is-unresolved {
+  opacity: 1;
+}
+
+// Snippet to add icon for unresolved links
+// so that we don't have to rely on opacity
+// Mad props to Jacob Bolda for the design suggestion!
+
+.markdown-source-view.mod-cm6 .is-unresolved .cm-hmd-internal-link::after {
+  content: '↩️';
+  width: 30px;
+  height: 30px;
+  margin-left: 3px;
+  font-size: 0.8rem;
+  opacity: 0.5;
+}

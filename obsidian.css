@@ -1,14 +1,43 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400;1,500&family=Karla:ital,wght@0,400;0,600;1,400;1,600&family=Rubik:ital,wght@0,400;0,600;1,400;1,600&display=swap");
 /*------------- --------------------*/
 /*          Typography              */
 /*------------- --------------------*/
 /*-----------------------------*/
 /*          Colors             */
 /*-----------------------------*/
+/* @settings
+
+name: Night Owl Theme
+id: night-owl-theme
+settings:
+    -
+        id: night-owl-typography
+        title: Colors
+        type: heading
+        level: 3
+    -
+        id: text-bold-color
+        title: Bold Color
+        type: variable-color
+        format: hex
+        default: '#50fa7b'
+    -
+        id: text-italic-color
+        title: Italic Color
+        type: variable-color
+        format: hex
+        default: '#ffeb95'
+    -
+        id: text-italic-bold-color
+        title: Italic Bold Color
+        type: variable-color
+        format: hex
+        default: '#b380fb'
+*/
 /*-------------------------------------*/
 /*          CSS Variables              */
 /*-------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400;1,500&family=Karla:ital,wght@0,400;0,600;1,400;1,600&family=Rubik:ital,wght@0,400;0,600;1,400;1,600&display=swap");
 :root {
   --font-size-normal: 18px;
   --font-size-code: 15px;
@@ -23,7 +52,8 @@
   --font-size-h6: 18px;
   --font-family-editor: IBM Plex Mono, Menlo, Monaco, Courier New, monospace;
   --font-family-preview: Karla, Avenir Next, Helvetica, Arial, sans-serif;
-  --font-family-preview-heading: Rubik, Avenir Next, Helvetica, Arial, sans-serif; }
+  --font-family-preview-heading: Rubik, Avenir Next, Helvetica, Arial, sans-serif;
+  --primary-lavender: #b380fb; }
 
 .theme-light,
 .theme-dark {
@@ -45,6 +75,9 @@
   --background-modifier-cover: rgba(0, 0, 0, 0.6);
   --text-accent: #ffeb95;
   --text-accent-hover: #8be9fd;
+  --text-bold-color: #50fa7b;
+  --text-italic-color: #ffeb95;
+  --text-italic-bold-color: #b380fb;
   --text-normal: #f8f8f2;
   --text-muted: #f8f8f2;
   --text-faint: #7fdbca;
@@ -218,13 +251,16 @@ a:not(.internal-link) {
 strong,
 .cm-strong {
   font-weight: 600;
-  color: #50fa7b; }
+  color: var(--text-bold-color); }
 
 /* emphasis in preview and editor */
 em,
 .cm-em {
-  color: var(--text-muted);
+  color: var(--text-italic-color);
   font-style: italic; }
+
+.cm-em.cm-strong {
+  color: var(--text-italic-bold-color); }
 
 /* strikethrough in preview and editor */
 s,
@@ -716,39 +752,35 @@ ul .task-list-item ul::before {
 .view-action {
   color: var(--text-faint); }
 
+.cm-header-1,
+.cm-header-2,
+.cm-header-3,
+.cm-header-4,
+.cm-header-5,
+.cm-header-6 {
+  font-weight: 500; }
+
 .cm-header-1 {
-  font-family: var(--font-family-editor);
-  font-weight: 500;
   font-size: var(--font-size-h1);
   color: var(--text-title-h1); }
 
 .cm-header-2 {
-  font-family: var(--font-family-editor);
-  font-weight: 500;
   font-size: var(--font-size-h2);
   color: var(--text-title-h2); }
 
 .cm-header-3 {
-  font-family: var(--font-family-editor);
-  font-weight: 500;
   font-size: var(--font-size-h3);
   color: var(--text-title-h3); }
 
 .cm-header-4 {
-  font-family: var(--font-family-editor);
-  font-weight: 500;
   font-size: var(--font-size-h4);
   color: var(--text-title-h4); }
 
 .cm-header-5 {
-  font-family: var(--font-family-editor);
-  font-weight: 500;
   font-size: var(--font-size-h5);
   color: var(--text-title-h5); }
 
 .cm-header-6 {
-  font-family: var(--font-family-editor);
-  font-weight: 500;
   font-size: var(--font-size-h6);
   color: var(--text-title-h6); }
 
@@ -797,3 +829,18 @@ ul .task-list-item ul::before {
 .markdown-preview-view h5,
 .markdown-preview-view h6 {
   font-weight: 500; }
+
+.markdown-source-view.mod-cm6
+.HyperMD-task-line[data-task]:not([data-task=' ']) {
+  text-decoration: none; }
+
+.markdown-source-view.mod-cm6 .is-unresolved {
+  opacity: 1; }
+
+.markdown-source-view.mod-cm6 .is-unresolved .cm-hmd-internal-link::after {
+  content: '↩️';
+  width: 30px;
+  height: 30px;
+  margin-left: 3px;
+  font-size: 0.8rem;
+  opacity: 0.5; }
