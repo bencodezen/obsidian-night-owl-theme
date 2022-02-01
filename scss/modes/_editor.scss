@@ -1,10 +1,38 @@
-$headingList: 1, 2, 3, 4, 5, 6;
+.cm-header-1,
+.cm-header-2,
+.cm-header-3,
+.cm-header-4,
+.cm-header-5,
+.cm-header-6 {
+  font-weight: 500;
+}
 
-@each $heading in $headingList {
-  .cm-header-#{$heading} {
-    font-family: var(--font-family-editor);
-    font-weight: 500;
-    font-size: var(--font-size-h#{$heading});
-    color: var(--text-title-h#{$heading});
-  }
+.cm-header-1 {
+  font-size: var(--font-size-h1);
+  color: var(--text-title-h1);
+}
+
+.cm-header-2 {
+  font-size: var(--font-size-h2);
+  color: var(--text-title-h2);
+}
+
+.cm-header-3 {
+  font-size: var(--font-size-h3);
+  color: var(--text-title-h3);
+}
+
+.cm-header-4 {
+  font-size: var(--font-size-h4);
+  color: var(--text-title-h4);
+}
+
+.cm-header-5 {
+  font-size: var(--font-size-h5);
+  color: var(--text-title-h5);
+}
+
+.cm-header-6 {
+  font-size: var(--font-size-h6);
+  color: var(--text-title-h6);
 }
