@@ -12,3 +12,20 @@
   .HyperMD-task-line[data-task]:not([data-task=' ']) {
   text-decoration: none;
 }
+
+.markdown-source-view.mod-cm6 .is-unresolved {
+  opacity: 1;
+}
+
+// Snippet to add icon for unresolved links
+// so that we don't have to rely on opacity
+// Mad props to Jacob Bolda for the design suggestion!
+
+.markdown-source-view.mod-cm6 .is-unresolved .cm-hmd-internal-link::after {
+  content: '↩️';
+  width: 30px;
+  height: 30px;
+  margin-left: 3px;
+  font-size: 0.8rem;
+  opacity: 0.5;
+}
