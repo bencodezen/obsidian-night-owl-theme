@@ -34,6 +34,8 @@
 
 This allows you to configure the theme directly in Obsidian without any CSS knowledge required!
 
+More settings to come, but if you have specific requests, please [open an issue here](https://github.com/bencodezen/obsidian-night-owl-theme/issues/new)!
+
 #### Intermediate: Add CSS snippets
 
 Check out CSS snippets as a way to progressively enhance the theme.
