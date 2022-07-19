@@ -1,1 +1,1 @@
-import './scss/obsidian.scss'
+import './theme/obsidian.scss'

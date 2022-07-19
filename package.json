@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite build --watch",
-    "build": "vite build && node migrateToRoot.js",
-    "moveToObsidian": "node migrateToObsidian.js",
+    "build": "vite build && node scripts/migrateToRoot.js",
+    "moveToObsidian": "node scripts/migrateToObsidian.js",
     "start": "concurrently 'npm run dev' 'npm run watch'",
     "watch": "watch 'npm run moveToObsidian' ./dist"
   },

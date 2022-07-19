@@ -6,5 +6,5 @@ dotenv.config()
 
 fse
   .copy('./dist/obsidian.css', process.env.DESTINATION)
-  .then(() => console.log('Destination: CSS file copied successfully!'))
+  .then(() => console.log('🚚 CSS file copied successfully!'))
   .catch(error => console.error(error))

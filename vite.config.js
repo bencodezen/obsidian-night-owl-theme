@@ -15,7 +15,7 @@ module.exports = {
       }
     },
     lib: {
-      entry: path.resolve(__dirname, 'scss/obsidian.scss'),
+      entry: path.resolve(__dirname, 'theme/obsidian.scss'),
       filename: 'obsidian-night-owl',
       name: 'obsidian-night-owl'
     }
