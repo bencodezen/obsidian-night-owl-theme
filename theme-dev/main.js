@@ -1,4 +1,4 @@
-import './style.css'
+import './scss/obsidian.scss'
 import javascriptLogo from './javascript.svg'
 import { setupCounter } from './counter.js'
 
