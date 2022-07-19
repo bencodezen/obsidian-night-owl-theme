@@ -4,9 +4,10 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite build --watch",
-    "move": "node migrateFile.js",
+    "build": "vite build && node migrateToRoot.js",
+    "moveToObsidian": "node migrateToObsidian.js",
     "start": "concurrently 'npm run dev' 'npm run watch'",
-    "watch": "watch 'npm run move' ./dist"
+    "watch": "watch 'npm run moveToObsidian' ./dist"
   },
   "devDependencies": {
     "dotenv": "^8.2.0",
