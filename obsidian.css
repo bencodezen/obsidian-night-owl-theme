@@ -51,6 +51,7 @@ settings:
   --font-size-h5: 19px;
   --font-size-h6: 18px;
   --font-family-editor: IBM Plex Mono, Menlo, Monaco, Courier New, monospace;
+  --font-text: Karla, Avenir Next, Helvetica, Arial, sans-serif;
   --font-family-preview: Karla, Avenir Next, Helvetica, Arial, sans-serif;
   --font-family-preview-heading: Rubik, Avenir Next, Helvetica, Arial, sans-serif;
   --primary-lavender: #b380fb; }
@@ -848,3 +849,6 @@ ul .task-list-item ul::before {
 .statediagram-note rect {
   fill: var(--background-secondary-alt) !important;
   stroke: #fff !important; }
+
+* {
+  border: 1px solid blue !important; }
