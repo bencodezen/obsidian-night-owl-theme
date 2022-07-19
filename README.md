@@ -24,7 +24,19 @@
 1. Open the **Settings** in Obsidian
 1. Navigate to **Appearances** tab under **Options**
 1. Under the **Themes** section, click on the dropdown menu next to **Theme** heading
-1. Select for `Night Owl` and then you're done! 🎉
+1. Select for `Night Owl` and then you're done! 🎉'
+
+### 👩‍💻 Local Dev Environment
+
+This is for people who want to clone the repo and work with the file locally.
+
+1. Clone the repo
+2. Install dependencies
+3. Create `.env` with a file path to where your theme directory lives
+    - Use `.env-sample` to see the format.
+4. Run `npm start`
+
+All changes made to SCSS files will automatically be migrated into your Obsidian environment.
 
 ## FAQs
 
