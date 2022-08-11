@@ -2,18 +2,18 @@
 /*          CSS Variables              */
 /*-------------------------------------*/
 
-:root {
-  --font-size-normal: 18px;
-  --font-size-code: 15px;
-  --font-size-side-dock: 15px;
-  --font-size-side-dock-title: 18px;
-  --font-size-status-bar: 15px;
-  --font-size-h1: 30px;
-  --font-size-h2: 25px;
-  --font-size-h3: 21px;
-  --font-size-h4: 20px;
-  --font-size-h5: 19px;
-  --font-size-h6: 18px;
+body {
+  --font-size-normal: var(--font-text-size);
+  --font-size-code: 0.8em;
+  --font-size-side-dock: 0.8em;
+  --font-size-side-dock-title: 1em;
+  --font-size-status-bar: 0.8em;
+  --font-size-h1: 1.7em;
+  --font-size-h2: 1.4em;
+  --font-size-h3: 1.15em;
+  --font-size-h4: 1.1em;
+  --font-size-h5: 1.05em;
+  --font-size-h6: 1em;
   --font-family-editor: #{$editorFont};
   --font-text: #{$previewFontBody};
   --font-family-preview: #{$previewFontBody};
