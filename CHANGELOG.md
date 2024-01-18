@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.0] - 2024-01-17
+
+- Update theme to be an extension of the [Obsidian Minimal Theme](https://github.com/kepano/obsidian-minimal) to ensure feature parity with Obsidian as it continues to change
+
 ## [1.1.0] - 2021-05-29
 
 - Update highlighting to reflect the more natural association with yellow rather than green

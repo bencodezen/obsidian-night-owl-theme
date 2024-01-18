@@ -1,1 +1,0 @@
-import './theme/obsidian.scss'
