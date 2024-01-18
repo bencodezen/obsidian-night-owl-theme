@@ -1,4 +1,4 @@
-# Obsidian.md - Night Owl Theme
+# Minimal Night Owl Obsidian Theme
 
 ![Release Badge](https://img.shields.io/github/v/release/bencodezen/obsidian-md-night-owl-theme)
 
@@ -6,43 +6,61 @@
 
 ![Obsidian Night Owl Theme Preview](obsidian-night-owl-theme.png)
 
-## 📥 Installation
+## 🛠️ Setup
 
-### Obsidian Marketplace (Recommended)
+### Step #1. Install Minimal Theme
 
-1. Open the **Settings** in Obsidian
+1. Open **Settings** in Obsidian
 1. Navigate to **Appearances** tab under **Options**
-1. Under the **Themes** section, click on the `Browse` button next to **Community Themes**
-1. Search for `Night Owl` in the Filter text input in the upper left corner
-1. Click `Use` and then you're done! 🎉
+1. Under the **Themes** section, click on the `Manage` button
+1. Search for `Minimal` in the Filter text input in the upper left corner
+1. Click `Install and use` and you should now see your theme automatically switch!
 
-### Manual
+## Step #2. Install Plugins for Minimal Theme Extension
 
-1. Download this repo
-1. Copy the `obsidian.css` file into your vault's `/.obsidian/themes` directory
-1. Rename the file to `Night Owl.css` so it will have a unique name in the theme selection dropdown
-1. Open the **Settings** in Obsidian
-1. Navigate to **Appearances** tab under **Options**
-1. Under the **Themes** section, click on the dropdown menu next to **Theme** heading
-1. Select for `Night Owl` and then you're done! 🎉'
+1. Open **Settings** in Obsidian (if you closed it)
+1. Navigate to **Community plugins** under **Options**
+1. If needed, click on **Turn on community plugins**
+1. Under the section **Community plugins**, click **Browse**
+1. Search for `Minimal Theme Settings` and install it
+1. Enable `Minimal Theme Settings` plugin
+1. Search for `Style Settings` and install it
+1. Enable `Style Settings` plugin
 
-### 👩‍💻 Local Dev Environment
+## Step #3. Import Night Owl Configuration File
 
-This is for people who want to clone the repo and work with the file locally.
+1. Copy the contents of [obsidian-night-owl-theme.json]
+1. Open **Settings** in Obsidian
+1. Navigate to **Style Settings** under **Community plugins**
+1. You should see four sections for `Minimal`, `Minimal Cards`, `Minimal Mobile`, and `Minimal Advanced Settings`
+1. Click on **Import** in the upper right
+1. Paste content from [obsidian-night-owl-theme.json]
+1. Click **Save**
 
-1. Clone the repo
-2. Install dependencies
-3. Create `.env` with a file path to where your theme directory lives
-    - Use `.env-sample` to see the format.
-4. Run `npm start`
+## Step #4. Match typography
 
-All changes made to SCSS files will automatically be migrated into your Obsidian environment.
+If you want to match the typography in the theme, you'll need the following fonts on your machine:
+
+- **Headings**: [Rubik](https://fonts.google.com/specimen/Rubik)
+- **Interface**: [Inter](https://fonts.google.com/specimen/Inter)
+- **Text** (Body): [Karla](https://fonts.google.com/specimen/Karla)
+- **Monospace**: [IBM Plex Mono](https://fonts.google.com/specimen/IBM+Plex+Mono)
+
+Except for **Headings** (which is managed by Style Settings), you'll need to update the font for **Interface**, **Text**, and **Monospace** in your Obsidian settings:
+
+1. Open **Settings**
+1. Click on **Appearance** under **Options**
+1. Click on **Manage** for each respective section to add the desired font you want to use.
+
+### Step #5. Enjoy your Night Owl theme
+
+🎉 Celebrate! 🎊 You're all set to go! 🎉
 
 ## FAQs
 
 ### How do I customize this theme?
 
-#### Easiest: Use [Obsidian Style Settings Plugin](https://github.com/mgmeyers/obsidian-style-settings)
+#### Easy: Use [Obsidian Style Settings Plugin](https://github.com/mgmeyers/obsidian-style-settings)
 
 This allows you to configure the theme directly in Obsidian without any CSS knowledge required!
 
@@ -56,29 +74,6 @@ Here's a [useful forum post](https://forum.obsidian.md/t/how-to-achieve-css-code
 
 > 🎩 Thanks to the suggestion by @DutchPete!
 
-#### Hard: Create a fork of this theme
+## 🎩 Credit
 
-This is arguably the most reliable route, but will require some familiarity with coding.
-
-I recommend using [Node.js](https://nodejs.org/en/) so you can leverage the [Sass](https://sass-lang.com/) I'm starting to break out so you can make meaningful changes.
-
-The Sass partials are will a work in progress though, so the way things are organized will probably change over time as I establish out better ways to structure how theming styles should be organized.
-
-## Typography
-
-### Preview Mode
-
-When in preview mode, the typography is inspired by a dual font family system to easily distinguish between headings and regular text.
-
-- Headings: [Rubik](https://fonts.google.com/specimen/Rubik)
-- Body: [Karla](https://fonts.google.com/specimen/Karla)
-
-### Editor Mode
-
-When in edit mode, the typography is inspired from a developer like environment where you're "coding" your second-brain.
-
-- [IBM Plex Mono](https://fonts.google.com/specimen/IBM+Plex+Mono)
-
-## Credit
-
-🎩 Hat tip to the [Dracula Obsidian Theme](https://github.com/jarodise/Dracula-for-Obsidian.md) for serving as the base theme I used to create this theme.
+Huge thanks to the [@kepano](https://stephango.com/about) for creating the [Minimal Obsidian Theme](https://github.com/kepano/obsidian-minimal) and maintaining an incredible base theme that makes keeping this theme up to date possible!
