@@ -4,7 +4,7 @@
 
 ⚡ Inspired by the original [Night Owl theme](https://github.com/sdras/night-owl-vscode-theme) by [Sarah Drasner](https://twitter.com/sarah_edo).
 
-![Obsidian Night Owl Theme Preview](obsidian-night-owl-theme.png)
+![Obsidian Night Owl Theme Preview](theme-preview.png)
 
 ## 🛠️ Setup
 
